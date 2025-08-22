@@ -1,0 +1,151 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "RC"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_RC
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/win32port/version.rc" "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/lib/CMakeFiles/websockets_shared.dir/__/win32port/version.rc.res"
+  )
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_RC
+  "LWS_DLL"
+  "LWS_INTERNAL"
+  "WINVER=0x0601"
+  "_WIN32_WINNT=0x0601"
+  "websockets_shared_EXPORTS"
+  )
+
+# The include file search paths:
+set(CMAKE_RC_TARGET_INCLUDE_PATH
+  "../../include"
+  "."
+  "../../lib"
+  "../../lib/."
+  "../../lib/secure-streams"
+  "../../lib/plat/windows/."
+  "../../lib/plat/windows/../../../win32port/win32helpers"
+  "../../lib/plat/windows/../../../win32port/win32helpers/zlib"
+  "../../lib/core/."
+  "../../lib/misc/."
+  "../../lib/misc/misc/jrpc"
+  "../../lib/system/./async-dns"
+  "../../lib/system/metrics/."
+  "../../lib/core-net/."
+  "../../lib/roles/."
+  "../../lib/roles/http/."
+  "../../lib/roles/http/./compression"
+  "../../lib/roles/h1/."
+  "../../lib/roles/ws/."
+  "../../lib/roles/raw-skt/."
+  "../../lib/roles/raw-file/."
+  "../../lib/roles/listen/."
+  "../../lib/event-libs/."
+  "../../lib/event-libs/poll/../poll"
+  "../../lib/secure-streams/."
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/win32port/win32helpers/gettimeofday.c" "lib/CMakeFiles/websockets_shared.dir/__/win32port/win32helpers/gettimeofday.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/__/win32port/win32helpers/gettimeofday.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/adopt.c" "lib/CMakeFiles/websockets_shared.dir/core-net/adopt.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/adopt.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/client/client.c" "lib/CMakeFiles/websockets_shared.dir/core-net/client/client.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/client/client.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/client/conmon.c" "lib/CMakeFiles/websockets_shared.dir/core-net/client/conmon.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/client/conmon.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/client/connect.c" "lib/CMakeFiles/websockets_shared.dir/core-net/client/connect.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/client/connect.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/client/connect2.c" "lib/CMakeFiles/websockets_shared.dir/core-net/client/connect2.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/client/connect2.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/client/connect3.c" "lib/CMakeFiles/websockets_shared.dir/core-net/client/connect3.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/client/connect3.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/client/connect4.c" "lib/CMakeFiles/websockets_shared.dir/core-net/client/connect4.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/client/connect4.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/client/sort-dns.c" "lib/CMakeFiles/websockets_shared.dir/core-net/client/sort-dns.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/client/sort-dns.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/close.c" "lib/CMakeFiles/websockets_shared.dir/core-net/close.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/close.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/dummy-callback.c" "lib/CMakeFiles/websockets_shared.dir/core-net/dummy-callback.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/dummy-callback.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/network.c" "lib/CMakeFiles/websockets_shared.dir/core-net/network.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/network.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/output.c" "lib/CMakeFiles/websockets_shared.dir/core-net/output.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/output.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/pollfd.c" "lib/CMakeFiles/websockets_shared.dir/core-net/pollfd.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/pollfd.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/service.c" "lib/CMakeFiles/websockets_shared.dir/core-net/service.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/service.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/sorted-usec-list.c" "lib/CMakeFiles/websockets_shared.dir/core-net/sorted-usec-list.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/sorted-usec-list.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/state.c" "lib/CMakeFiles/websockets_shared.dir/core-net/state.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/state.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/vhost.c" "lib/CMakeFiles/websockets_shared.dir/core-net/vhost.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/vhost.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/wol.c" "lib/CMakeFiles/websockets_shared.dir/core-net/wol.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/wol.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/wsi-timeout.c" "lib/CMakeFiles/websockets_shared.dir/core-net/wsi-timeout.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/wsi-timeout.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core-net/wsi.c" "lib/CMakeFiles/websockets_shared.dir/core-net/wsi.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core-net/wsi.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core/alloc.c" "lib/CMakeFiles/websockets_shared.dir/core/alloc.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core/alloc.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core/buflist.c" "lib/CMakeFiles/websockets_shared.dir/core/buflist.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core/buflist.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core/context.c" "lib/CMakeFiles/websockets_shared.dir/core/context.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core/context.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core/libwebsockets.c" "lib/CMakeFiles/websockets_shared.dir/core/libwebsockets.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core/libwebsockets.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core/logs.c" "lib/CMakeFiles/websockets_shared.dir/core/logs.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core/logs.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core/lws_dll2.c" "lib/CMakeFiles/websockets_shared.dir/core/lws_dll2.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core/lws_dll2.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core/lws_map.c" "lib/CMakeFiles/websockets_shared.dir/core/lws_map.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core/lws_map.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/core/vfs.c" "lib/CMakeFiles/websockets_shared.dir/core/vfs.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/core/vfs.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/event-libs/poll/poll.c" "lib/CMakeFiles/websockets_shared.dir/event-libs/poll/poll.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/event-libs/poll/poll.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/base64-decode.c" "lib/CMakeFiles/websockets_shared.dir/misc/base64-decode.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/base64-decode.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/cache-ttl/file.c" "lib/CMakeFiles/websockets_shared.dir/misc/cache-ttl/file.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/cache-ttl/file.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/cache-ttl/heap.c" "lib/CMakeFiles/websockets_shared.dir/misc/cache-ttl/heap.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/cache-ttl/heap.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/cache-ttl/lws-cache-ttl.c" "lib/CMakeFiles/websockets_shared.dir/misc/cache-ttl/lws-cache-ttl.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/cache-ttl/lws-cache-ttl.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dir.c" "lib/CMakeFiles/websockets_shared.dir/misc/dir.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dir.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dlo/dlo-font-mcufont.c" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-font-mcufont.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-font-mcufont.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dlo/dlo-jpeg.c" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-jpeg.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-jpeg.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dlo/dlo-lhp.c" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-lhp.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-lhp.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dlo/dlo-png.c" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-png.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-png.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dlo/dlo-rect.c" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-rect.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-rect.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dlo/dlo-ss.c" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-ss.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-ss.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dlo/dlo-text.c" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-text.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo-text.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/dlo/dlo.c" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/dlo/dlo.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/jpeg.c" "lib/CMakeFiles/websockets_shared.dir/misc/jpeg.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/jpeg.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/jrpc/jrpc.c" "lib/CMakeFiles/websockets_shared.dir/misc/jrpc/jrpc.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/jrpc/jrpc.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/lejp.c" "lib/CMakeFiles/websockets_shared.dir/misc/lejp.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/lejp.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/lhp-ss.c" "lib/CMakeFiles/websockets_shared.dir/misc/lhp-ss.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/lhp-ss.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/lhp.c" "lib/CMakeFiles/websockets_shared.dir/misc/lhp.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/lhp.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/lws-ring.c" "lib/CMakeFiles/websockets_shared.dir/misc/lws-ring.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/lws-ring.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/lwsac/cached-file.c" "lib/CMakeFiles/websockets_shared.dir/misc/lwsac/cached-file.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/lwsac/cached-file.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/lwsac/lwsac.c" "lib/CMakeFiles/websockets_shared.dir/misc/lwsac/lwsac.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/lwsac/lwsac.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/prng.c" "lib/CMakeFiles/websockets_shared.dir/misc/prng.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/prng.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/sha-1.c" "lib/CMakeFiles/websockets_shared.dir/misc/sha-1.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/sha-1.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/upng-gzip.c" "lib/CMakeFiles/websockets_shared.dir/misc/upng-gzip.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/upng-gzip.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/misc/upng.c" "lib/CMakeFiles/websockets_shared.dir/misc/upng.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/misc/upng.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/plat/windows/windows-fds.c" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-fds.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-fds.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/plat/windows/windows-file.c" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-file.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-file.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/plat/windows/windows-init.c" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-init.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-init.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/plat/windows/windows-misc.c" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-misc.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-misc.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/plat/windows/windows-pipe.c" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-pipe.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-pipe.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/plat/windows/windows-plugins.c" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-plugins.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-plugins.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/plat/windows/windows-service.c" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-service.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-service.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/plat/windows/windows-sockets.c" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-sockets.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/plat/windows/windows-sockets.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/h1/ops-h1.c" "lib/CMakeFiles/websockets_shared.dir/roles/h1/ops-h1.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/h1/ops-h1.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/http/client/client-http.c" "lib/CMakeFiles/websockets_shared.dir/roles/http/client/client-http.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/http/client/client-http.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/http/cookie.c" "lib/CMakeFiles/websockets_shared.dir/roles/http/cookie.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/http/cookie.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/http/date.c" "lib/CMakeFiles/websockets_shared.dir/roles/http/date.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/http/date.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/http/header.c" "lib/CMakeFiles/websockets_shared.dir/roles/http/header.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/http/header.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/http/parsers.c" "lib/CMakeFiles/websockets_shared.dir/roles/http/parsers.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/http/parsers.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/http/server/lejp-conf.c" "lib/CMakeFiles/websockets_shared.dir/roles/http/server/lejp-conf.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/http/server/lejp-conf.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/http/server/lws-spa.c" "lib/CMakeFiles/websockets_shared.dir/roles/http/server/lws-spa.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/http/server/lws-spa.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/http/server/server.c" "lib/CMakeFiles/websockets_shared.dir/roles/http/server/server.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/http/server/server.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/listen/ops-listen.c" "lib/CMakeFiles/websockets_shared.dir/roles/listen/ops-listen.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/listen/ops-listen.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/pipe/ops-pipe.c" "lib/CMakeFiles/websockets_shared.dir/roles/pipe/ops-pipe.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/pipe/ops-pipe.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/raw-file/ops-raw-file.c" "lib/CMakeFiles/websockets_shared.dir/roles/raw-file/ops-raw-file.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/raw-file/ops-raw-file.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/raw-skt/ops-raw-skt.c" "lib/CMakeFiles/websockets_shared.dir/roles/raw-skt/ops-raw-skt.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/raw-skt/ops-raw-skt.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/ws/client-parser-ws.c" "lib/CMakeFiles/websockets_shared.dir/roles/ws/client-parser-ws.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/ws/client-parser-ws.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/ws/client-ws.c" "lib/CMakeFiles/websockets_shared.dir/roles/ws/client-ws.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/ws/client-ws.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/ws/ops-ws.c" "lib/CMakeFiles/websockets_shared.dir/roles/ws/ops-ws.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/ws/ops-ws.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/roles/ws/server-ws.c" "lib/CMakeFiles/websockets_shared.dir/roles/ws/server-ws.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/roles/ws/server-ws.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/policy-common.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/policy-common.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/policy-common.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/policy-json.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/policy-json.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/policy-json.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/protocols/ss-h1.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/protocols/ss-h1.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/protocols/ss-h1.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/protocols/ss-raw.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/protocols/ss-raw.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/protocols/ss-raw.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/protocols/ss-ws.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/protocols/ss-ws.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/protocols/ss-ws.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/secure-streams.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/secure-streams.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/secure-streams.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/system/auth-api.amazon.com/auth.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/system/auth-api.amazon.com/auth.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/system/auth-api.amazon.com/auth.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/system/captive-portal-detect/captive-portal-detect.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/system/captive-portal-detect/captive-portal-detect.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/system/captive-portal-detect/captive-portal-detect.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/secure-streams/system/fetch-policy/fetch-policy.c" "lib/CMakeFiles/websockets_shared.dir/secure-streams/system/fetch-policy/fetch-policy.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/secure-streams/system/fetch-policy/fetch-policy.c.obj.d"
+  "/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/lib/system/system.c" "lib/CMakeFiles/websockets_shared.dir/system/system.c.obj" "gcc" "lib/CMakeFiles/websockets_shared.dir/system/system.c.obj.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

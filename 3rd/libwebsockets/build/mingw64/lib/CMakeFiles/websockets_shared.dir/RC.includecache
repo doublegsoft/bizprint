@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/win32port/version.rc
+winver.h
+-
+

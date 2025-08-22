@@ -1,0 +1,785 @@
+Performing C SOURCE FILE Test LWS_HAVE_MALLOC_TRIM failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f2509/fast && /usr/bin/make  -f CMakeFiles/cmTC_f2509.dir/build.make CMakeFiles/cmTC_f2509.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2509.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_MALLOC_TRIM  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_f2509.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:2:43: warning: implicit declaration of function ‘malloc_trim’; did you mean ‘malloc’? [-Wimplicit-function-declaration]
+  int main(int argc, char **argv) { return malloc_trim(0); }
+                                           ^~~~~~~~~~~
+                                           malloc
+Linking C executable cmTC_f2509.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2509.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_f2509.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_f2509.dir/objects.a @CMakeFiles/cmTC_f2509.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label  -Wl,--whole-archive CMakeFiles/cmTC_f2509.dir/objects.a -Wl,--no-whole-archive -o cmTC_f2509.exe -Wl,--out-implib,libcmTC_f2509.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f2509.dir/linklibs.rsp
+CMakeFiles/cmTC_f2509.dir/objects.a(src.c.obj):src.c:(.text+0x1a): undefined reference to `malloc_trim'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f2509.dir/build.make:100: recipe for target 'cmTC_f2509.exe' failed
+make[1]: *** [cmTC_f2509.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_f2509/fast' failed
+make: *** [cmTC_f2509/fast] Error 2
+
+
+Source file was:
+#include <malloc.h>
+	int main(int argc, char **argv) { return malloc_trim(0); }
+	
+Performing C SOURCE FILE Test LWS_HAVE_MALLOC_USABLE_SIZE failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_74328/fast && /usr/bin/make  -f CMakeFiles/cmTC_74328.dir/build.make CMakeFiles/cmTC_74328.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_74328.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_MALLOC_USABLE_SIZE  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_74328.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:2:48: warning: implicit declaration of function ‘malloc_usable_size’ [-Wimplicit-function-declaration]
+  int main(int argc, char **argv) { return (int)malloc_usable_size((void *)0); }
+                                                ^~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_74328.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74328.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_74328.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_74328.dir/objects.a @CMakeFiles/cmTC_74328.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label  -Wl,--whole-archive CMakeFiles/cmTC_74328.dir/objects.a -Wl,--no-whole-archive -o cmTC_74328.exe -Wl,--out-implib,libcmTC_74328.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_74328.dir/linklibs.rsp
+CMakeFiles/cmTC_74328.dir/objects.a(src.c.obj):src.c:(.text+0x1a): undefined reference to `malloc_usable_size'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_74328.dir/build.make:100: recipe for target 'cmTC_74328.exe' failed
+make[1]: *** [cmTC_74328.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_74328/fast' failed
+make: *** [cmTC_74328/fast] Error 2
+
+
+Source file was:
+#include <malloc.h>
+	int main(int argc, char **argv) { return (int)malloc_usable_size((void *)0); }
+	
+Determining if the function fork exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b5032/fast && /usr/bin/make  -f CMakeFiles/cmTC_b5032.dir/build.make CMakeFiles/cmTC_b5032.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5032.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=fork -o CMakeFiles/cmTC_b5032.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘fork’ [-Wbuiltin-declaration-mismatch]
+/export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_b5032.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5032.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_b5032.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_b5032.dir/objects.a @CMakeFiles/cmTC_b5032.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=fork -Wl,--whole-archive CMakeFiles/cmTC_b5032.dir/objects.a -Wl,--no-whole-archive -o cmTC_b5032.exe -Wl,--out-implib,libcmTC_b5032.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_b5032.dir/linklibs.rsp
+CMakeFiles/cmTC_b5032.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `fork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b5032.dir/build.make:100: recipe for target 'cmTC_b5032.exe' failed
+make[1]: *** [cmTC_b5032.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_b5032/fast' failed
+make: *** [cmTC_b5032/fast] Error 2
+
+
+
+Determining if the function socket exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_91341/fast && /usr/bin/make  -f CMakeFiles/cmTC_91341.dir/build.make CMakeFiles/cmTC_91341.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91341.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=socket -o CMakeFiles/cmTC_91341.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_91341.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91341.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_91341.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_91341.dir/objects.a @CMakeFiles/cmTC_91341.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=socket -Wl,--whole-archive CMakeFiles/cmTC_91341.dir/objects.a -Wl,--no-whole-archive -o cmTC_91341.exe -Wl,--out-implib,libcmTC_91341.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_91341.dir/linklibs.rsp
+CMakeFiles/cmTC_91341.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `socket'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_91341.dir/build.make:100: recipe for target 'cmTC_91341.exe' failed
+make[1]: *** [cmTC_91341.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_91341/fast' failed
+make: *** [cmTC_91341/fast] Error 2
+
+
+
+Determining if the function vfork exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7d10a/fast && /usr/bin/make  -f CMakeFiles/cmTC_7d10a.dir/build.make CMakeFiles/cmTC_7d10a.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d10a.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=vfork -o CMakeFiles/cmTC_7d10a.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7d10a.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d10a.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_7d10a.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_7d10a.dir/objects.a @CMakeFiles/cmTC_7d10a.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=vfork -Wl,--whole-archive CMakeFiles/cmTC_7d10a.dir/objects.a -Wl,--no-whole-archive -o cmTC_7d10a.exe -Wl,--out-implib,libcmTC_7d10a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_7d10a.dir/linklibs.rsp
+CMakeFiles/cmTC_7d10a.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `vfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7d10a.dir/build.make:100: recipe for target 'cmTC_7d10a.exe' failed
+make[1]: *** [cmTC_7d10a.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_7d10a/fast' failed
+make: *** [cmTC_7d10a/fast] Error 2
+
+
+
+Determining if the function getifaddrs exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8e8bb/fast && /usr/bin/make  -f CMakeFiles/cmTC_8e8bb.dir/build.make CMakeFiles/cmTC_8e8bb.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8e8bb.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getifaddrs -o CMakeFiles/cmTC_8e8bb.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8e8bb.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e8bb.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_8e8bb.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_8e8bb.dir/objects.a @CMakeFiles/cmTC_8e8bb.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getifaddrs -Wl,--whole-archive CMakeFiles/cmTC_8e8bb.dir/objects.a -Wl,--no-whole-archive -o cmTC_8e8bb.exe -Wl,--out-implib,libcmTC_8e8bb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_8e8bb.dir/linklibs.rsp
+CMakeFiles/cmTC_8e8bb.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getifaddrs'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8e8bb.dir/build.make:100: recipe for target 'cmTC_8e8bb.exe' failed
+make[1]: *** [cmTC_8e8bb.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_8e8bb/fast' failed
+make: *** [cmTC_8e8bb/fast] Error 2
+
+
+
+Determining if the function getloadavg exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_95bd5/fast && /usr/bin/make  -f CMakeFiles/cmTC_95bd5.dir/build.make CMakeFiles/cmTC_95bd5.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95bd5.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getloadavg -o CMakeFiles/cmTC_95bd5.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_95bd5.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95bd5.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_95bd5.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_95bd5.dir/objects.a @CMakeFiles/cmTC_95bd5.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getloadavg -Wl,--whole-archive CMakeFiles/cmTC_95bd5.dir/objects.a -Wl,--no-whole-archive -o cmTC_95bd5.exe -Wl,--out-implib,libcmTC_95bd5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_95bd5.dir/linklibs.rsp
+CMakeFiles/cmTC_95bd5.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getloadavg'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_95bd5.dir/build.make:100: recipe for target 'cmTC_95bd5.exe' failed
+make[1]: *** [cmTC_95bd5.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_95bd5/fast' failed
+make: *** [cmTC_95bd5/fast] Error 2
+
+
+
+Determining if the function _stat32i64 exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_91495/fast && /usr/bin/make  -f CMakeFiles/cmTC_91495.dir/build.make CMakeFiles/cmTC_91495.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91495.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=_stat32i64 -o CMakeFiles/cmTC_91495.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_91495.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91495.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_91495.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_91495.dir/objects.a @CMakeFiles/cmTC_91495.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=_stat32i64 -Wl,--whole-archive CMakeFiles/cmTC_91495.dir/objects.a -Wl,--no-whole-archive -o cmTC_91495.exe -Wl,--out-implib,libcmTC_91495.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_91495.dir/linklibs.rsp
+CMakeFiles/cmTC_91495.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `_stat32i64'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_91495.dir/build.make:100: recipe for target 'cmTC_91495.exe' failed
+make[1]: *** [cmTC_91495.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_91495/fast' failed
+make: *** [cmTC_91495/fast] Error 2
+
+
+
+Determining if the function clock_gettime exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b8b85/fast && /usr/bin/make  -f CMakeFiles/cmTC_b8b85.dir/build.make CMakeFiles/cmTC_b8b85.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8b85.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=clock_gettime -o CMakeFiles/cmTC_b8b85.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b8b85.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8b85.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_b8b85.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_b8b85.dir/objects.a @CMakeFiles/cmTC_b8b85.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=clock_gettime -Wl,--whole-archive CMakeFiles/cmTC_b8b85.dir/objects.a -Wl,--no-whole-archive -o cmTC_b8b85.exe -Wl,--out-implib,libcmTC_b8b85.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_b8b85.dir/linklibs.rsp
+CMakeFiles/cmTC_b8b85.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `clock_gettime'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b8b85.dir/build.make:100: recipe for target 'cmTC_b8b85.exe' failed
+make[1]: *** [cmTC_b8b85.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_b8b85/fast' failed
+make: *** [cmTC_b8b85/fast] Error 2
+
+
+
+Determining if the function localtime_r exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3175d/fast && /usr/bin/make  -f CMakeFiles/cmTC_3175d.dir/build.make CMakeFiles/cmTC_3175d.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3175d.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=localtime_r -o CMakeFiles/cmTC_3175d.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3175d.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3175d.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_3175d.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_3175d.dir/objects.a @CMakeFiles/cmTC_3175d.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=localtime_r -Wl,--whole-archive CMakeFiles/cmTC_3175d.dir/objects.a -Wl,--no-whole-archive -o cmTC_3175d.exe -Wl,--out-implib,libcmTC_3175d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_3175d.dir/linklibs.rsp
+CMakeFiles/cmTC_3175d.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `localtime_r'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3175d.dir/build.make:100: recipe for target 'cmTC_3175d.exe' failed
+make[1]: *** [cmTC_3175d.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_3175d/fast' failed
+make: *** [cmTC_3175d/fast] Error 2
+
+
+
+Determining if the function gmtime_r exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e66ad/fast && /usr/bin/make  -f CMakeFiles/cmTC_e66ad.dir/build.make CMakeFiles/cmTC_e66ad.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e66ad.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=gmtime_r -o CMakeFiles/cmTC_e66ad.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e66ad.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e66ad.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_e66ad.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_e66ad.dir/objects.a @CMakeFiles/cmTC_e66ad.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=gmtime_r -Wl,--whole-archive CMakeFiles/cmTC_e66ad.dir/objects.a -Wl,--no-whole-archive -o cmTC_e66ad.exe -Wl,--out-implib,libcmTC_e66ad.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_e66ad.dir/linklibs.rsp
+CMakeFiles/cmTC_e66ad.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `gmtime_r'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e66ad.dir/build.make:100: recipe for target 'cmTC_e66ad.exe' failed
+make[1]: *** [cmTC_e66ad.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_e66ad/fast' failed
+make: *** [cmTC_e66ad/fast] Error 2
+
+
+
+Determining if the function ctime_r exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5e6b9/fast && /usr/bin/make  -f CMakeFiles/cmTC_5e6b9.dir/build.make CMakeFiles/cmTC_5e6b9.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e6b9.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=ctime_r -o CMakeFiles/cmTC_5e6b9.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5e6b9.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e6b9.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_5e6b9.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_5e6b9.dir/objects.a @CMakeFiles/cmTC_5e6b9.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=ctime_r -Wl,--whole-archive CMakeFiles/cmTC_5e6b9.dir/objects.a -Wl,--no-whole-archive -o cmTC_5e6b9.exe -Wl,--out-implib,libcmTC_5e6b9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_5e6b9.dir/linklibs.rsp
+CMakeFiles/cmTC_5e6b9.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `ctime_r'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5e6b9.dir/build.make:100: recipe for target 'cmTC_5e6b9.exe' failed
+make[1]: *** [cmTC_5e6b9.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_5e6b9/fast' failed
+make: *** [cmTC_5e6b9/fast] Error 2
+
+
+
+Determining if the function getgrgid_r exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bd725/fast && /usr/bin/make  -f CMakeFiles/cmTC_bd725.dir/build.make CMakeFiles/cmTC_bd725.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd725.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getgrgid_r -o CMakeFiles/cmTC_bd725.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bd725.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd725.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_bd725.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_bd725.dir/objects.a @CMakeFiles/cmTC_bd725.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getgrgid_r -Wl,--whole-archive CMakeFiles/cmTC_bd725.dir/objects.a -Wl,--no-whole-archive -o cmTC_bd725.exe -Wl,--out-implib,libcmTC_bd725.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_bd725.dir/linklibs.rsp
+CMakeFiles/cmTC_bd725.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getgrgid_r'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bd725.dir/build.make:100: recipe for target 'cmTC_bd725.exe' failed
+make[1]: *** [cmTC_bd725.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_bd725/fast' failed
+make: *** [cmTC_bd725/fast] Error 2
+
+
+
+Determining if the function getgrnam_r exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa24a/fast && /usr/bin/make  -f CMakeFiles/cmTC_aa24a.dir/build.make CMakeFiles/cmTC_aa24a.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa24a.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getgrnam_r -o CMakeFiles/cmTC_aa24a.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aa24a.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa24a.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_aa24a.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_aa24a.dir/objects.a @CMakeFiles/cmTC_aa24a.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getgrnam_r -Wl,--whole-archive CMakeFiles/cmTC_aa24a.dir/objects.a -Wl,--no-whole-archive -o cmTC_aa24a.exe -Wl,--out-implib,libcmTC_aa24a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_aa24a.dir/linklibs.rsp
+CMakeFiles/cmTC_aa24a.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getgrnam_r'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_aa24a.dir/build.make:100: recipe for target 'cmTC_aa24a.exe' failed
+make[1]: *** [cmTC_aa24a.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_aa24a/fast' failed
+make: *** [cmTC_aa24a/fast] Error 2
+
+
+
+Determining if the function getpwuid_r exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_34369/fast && /usr/bin/make  -f CMakeFiles/cmTC_34369.dir/build.make CMakeFiles/cmTC_34369.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34369.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getpwuid_r -o CMakeFiles/cmTC_34369.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_34369.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34369.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_34369.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_34369.dir/objects.a @CMakeFiles/cmTC_34369.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getpwuid_r -Wl,--whole-archive CMakeFiles/cmTC_34369.dir/objects.a -Wl,--no-whole-archive -o cmTC_34369.exe -Wl,--out-implib,libcmTC_34369.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_34369.dir/linklibs.rsp
+CMakeFiles/cmTC_34369.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getpwuid_r'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_34369.dir/build.make:100: recipe for target 'cmTC_34369.exe' failed
+make[1]: *** [cmTC_34369.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_34369/fast' failed
+make: *** [cmTC_34369/fast] Error 2
+
+
+
+Determining if the function getpwnam_r exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aff28/fast && /usr/bin/make  -f CMakeFiles/cmTC_aff28.dir/build.make CMakeFiles/cmTC_aff28.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aff28.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getpwnam_r -o CMakeFiles/cmTC_aff28.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aff28.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aff28.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_aff28.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_aff28.dir/objects.a @CMakeFiles/cmTC_aff28.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=getpwnam_r -Wl,--whole-archive CMakeFiles/cmTC_aff28.dir/objects.a -Wl,--no-whole-archive -o cmTC_aff28.exe -Wl,--out-implib,libcmTC_aff28.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_aff28.dir/linklibs.rsp
+CMakeFiles/cmTC_aff28.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getpwnam_r'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_aff28.dir/build.make:100: recipe for target 'cmTC_aff28.exe' failed
+make[1]: *** [cmTC_aff28.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_aff28/fast' failed
+make: *** [cmTC_aff28/fast] Error 2
+
+
+
+Determining if the function timegm exists failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_40e40/fast && /usr/bin/make  -f CMakeFiles/cmTC_40e40.dir/build.make CMakeFiles/cmTC_40e40.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40e40.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline  -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=timegm -o CMakeFiles/cmTC_40e40.dir/CheckFunctionExists.c.obj -c /export/opt/cmake-3.20.6/share/cmake-3.20/Modules/CheckFunctionExists.c
+Linking C executable cmTC_40e40.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40e40.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_40e40.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_40e40.dir/objects.a @CMakeFiles/cmTC_40e40.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label -DCHECK_FUNCTION_EXISTS=timegm -Wl,--whole-archive CMakeFiles/cmTC_40e40.dir/objects.a -Wl,--no-whole-archive -o cmTC_40e40.exe -Wl,--out-implib,libcmTC_40e40.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_40e40.dir/linklibs.rsp
+CMakeFiles/cmTC_40e40.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `timegm'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_40e40.dir/build.make:100: recipe for target 'cmTC_40e40.exe' failed
+make[1]: *** [cmTC_40e40.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_40e40/fast' failed
+make: *** [cmTC_40e40/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test LWS_HAVE_NETINET_IN_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a917c/fast && /usr/bin/make  -f CMakeFiles/cmTC_a917c.dir/build.make CMakeFiles/cmTC_a917c.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a917c.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_NETINET_IN_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_a917c.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: netinet/in.h: No such file or directory
+ #include <netinet/in.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_a917c.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_a917c.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_a917c.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_a917c/fast' failed
+make: *** [cmTC_a917c/fast] Error 2
+
+
+Source file was:
+#include <netinet/in.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_SYS_PRCTL_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_17d9a/fast && /usr/bin/make  -f CMakeFiles/cmTC_17d9a.dir/build.make CMakeFiles/cmTC_17d9a.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17d9a.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_SYS_PRCTL_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_17d9a.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: sys/prctl.h: No such file or directory
+ #include <sys/prctl.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_17d9a.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_17d9a.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_17d9a.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_17d9a/fast' failed
+make: *** [cmTC_17d9a/fast] Error 2
+
+
+Source file was:
+#include <sys/prctl.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_SYS_SOCKET_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1beb8/fast && /usr/bin/make  -f CMakeFiles/cmTC_1beb8.dir/build.make CMakeFiles/cmTC_1beb8.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1beb8.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_SYS_SOCKET_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_1beb8.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: sys/socket.h: No such file or directory
+ #include <sys/socket.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_1beb8.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_1beb8.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_1beb8.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_1beb8/fast' failed
+make: *** [cmTC_1beb8/fast] Error 2
+
+
+Source file was:
+#include <sys/socket.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_SYS_SOCKIO_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_14290/fast && /usr/bin/make  -f CMakeFiles/cmTC_14290.dir/build.make CMakeFiles/cmTC_14290.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14290.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_SYS_SOCKIO_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_14290.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: sys/sockio.h: No such file or directory
+ #include <sys/sockio.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_14290.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_14290.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_14290.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_14290/fast' failed
+make: *** [cmTC_14290/fast] Error 2
+
+
+Source file was:
+#include <sys/sockio.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_VFORK_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_358fb/fast && /usr/bin/make  -f CMakeFiles/cmTC_358fb.dir/build.make CMakeFiles/cmTC_358fb.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_358fb.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_VFORK_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_358fb.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: vfork.h: No such file or directory
+ #include <vfork.h>
+          ^~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_358fb.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_358fb.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_358fb.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_358fb/fast' failed
+make: *** [cmTC_358fb/fast] Error 2
+
+
+Source file was:
+#include <vfork.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_SYS_CAPABILITY_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_98d95/fast && /usr/bin/make  -f CMakeFiles/cmTC_98d95.dir/build.make CMakeFiles/cmTC_98d95.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98d95.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_SYS_CAPABILITY_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_98d95.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: sys/capability.h: No such file or directory
+ #include <sys/capability.h>
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_98d95.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_98d95.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_98d95.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_98d95/fast' failed
+make: *** [cmTC_98d95/fast] Error 2
+
+
+Source file was:
+#include <sys/capability.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_SYS_RESOURCE_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c05e7/fast && /usr/bin/make  -f CMakeFiles/cmTC_c05e7.dir/build.make CMakeFiles/cmTC_c05e7.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c05e7.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_SYS_RESOURCE_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_c05e7.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: sys/resource.h: No such file or directory
+ #include <sys/resource.h>
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_c05e7.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_c05e7.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_c05e7.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_c05e7/fast' failed
+make: *** [cmTC_c05e7/fast] Error 2
+
+
+Source file was:
+#include <sys/resource.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_LINUX_IPV6_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ebd43/fast && /usr/bin/make  -f CMakeFiles/cmTC_ebd43.dir/build.make CMakeFiles/cmTC_ebd43.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebd43.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_LINUX_IPV6_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_ebd43.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: linux/ipv6.h: No such file or directory
+ #include <linux/ipv6.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_ebd43.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_ebd43.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_ebd43.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_ebd43/fast' failed
+make: *** [cmTC_ebd43/fast] Error 2
+
+
+Source file was:
+#include <linux/ipv6.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_NET_IF_ETHER_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ed357/fast && /usr/bin/make  -f CMakeFiles/cmTC_ed357.dir/build.make CMakeFiles/cmTC_ed357.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed357.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_NET_IF_ETHER_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_ed357.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: net/if_ether.h: No such file or directory
+ #include <net/if_ether.h>
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_ed357.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_ed357.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_ed357.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_ed357/fast' failed
+make: *** [cmTC_ed357/fast] Error 2
+
+
+Source file was:
+#include <sys/types.h>
+#include <net/if_ether.h>
+ void main(void) { while (1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_NET_ETHERNET_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_914e4/fast && /usr/bin/make  -f CMakeFiles/cmTC_914e4.dir/build.make CMakeFiles/cmTC_914e4.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_914e4.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_NET_ETHERNET_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_914e4.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: net/ethernet.h: No such file or directory
+ #include <net/ethernet.h>
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_914e4.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_914e4.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_914e4.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_914e4/fast' failed
+make: *** [cmTC_914e4/fast] Error 2
+
+
+Source file was:
+#include <sys/types.h>
+#include <net/ethernet.h>
+ void main(void) { while (1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_SYSTEMD_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8a944/fast && /usr/bin/make  -f CMakeFiles/cmTC_8a944.dir/build.make CMakeFiles/cmTC_8a944.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8a944.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_SYSTEMD_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_8a944.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: systemd/sd-daemon.h: No such file or directory
+ #include <systemd/sd-daemon.h>
+          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_8a944.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_8a944.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_8a944.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_8a944/fast' failed
+make: *** [cmTC_8a944/fast] Error 2
+
+
+Source file was:
+#include <systemd/sd-daemon.h>
+void main(void) { while(1) ; } void xxexit(void){}
+Performing C SOURCE FILE Test LWS_HAVE_WIN32_AFUNIX_H failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_25da7/fast && /usr/bin/make  -f CMakeFiles/cmTC_25da7.dir/build.make CMakeFiles/cmTC_25da7.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25da7.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_WIN32_AFUNIX_H  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_25da7.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:2:15: fatal error: afunix.h: No such file or directory
+      #include <afunix.h>
+               ^~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_25da7.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_25da7.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_25da7.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_25da7/fast' failed
+make: *** [cmTC_25da7/fast] Error 2
+
+
+Source file was:
+#include <winsock2.h>
+				 #include <afunix.h>
+				 int main() { return 0; }
+Performing C SOURCE FILE Test LWS_HAS_PTHREAD_SETNAME_NP failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7a765/fast && /usr/bin/make  -f CMakeFiles/cmTC_7a765.dir/build.make CMakeFiles/cmTC_7a765.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a765.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAS_PTHREAD_SETNAME_NP  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_7a765.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7a765.exe
+/export/opt/cmake-3.20.6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a765.dir/link.txt --verbose=1
+/export/opt/cmake-3.20.6/bin/cmake -E rm -f CMakeFiles/cmTC_7a765.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar cr CMakeFiles/cmTC_7a765.dir/objects.a @CMakeFiles/cmTC_7a765.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -Wno-unused-variable   -Wno-unused-label  -Wl,--whole-archive CMakeFiles/cmTC_7a765.dir/objects.a -Wl,--no-whole-archive -o cmTC_7a765.exe -Wl,--out-implib,libcmTC_7a765.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_7a765.dir/linklibs.rsp
+CMakeFiles/cmTC_7a765.dir/objects.a(src.c.obj):src.c:(.text+0x22): undefined reference to `pthread_setname_np'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7a765.dir/build.make:100: recipe for target 'cmTC_7a765.exe' failed
+make[1]: *** [cmTC_7a765.exe] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_7a765/fast' failed
+make: *** [cmTC_7a765/fast] Error 2
+
+
+Source file was:
+
+		#ifndef _GNU_SOURCE
+		#define _GNU_SOURCE
+		#endif
+		#include <pthread.h>
+		int main(void) {
+		#ifdef __PTW32_H
+			pthread_t th = {0,0};
+		#else
+			pthread_t th = 0;
+		#endif
+			pthread_setname_np(th, NULL);
+			return 0;
+		}
+Performing C SOURCE FILE Test LWS_HAVE_RTA_PREF failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f8568/fast && /usr/bin/make  -f CMakeFiles/cmTC_f8568.dir/build.make CMakeFiles/cmTC_f8568.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8568.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_RTA_PREF  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_f8568.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: linux/rtnetlink.h: No such file or directory
+ #include <linux/rtnetlink.h>
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_f8568.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_f8568.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_f8568.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_f8568/fast' failed
+make: *** [cmTC_f8568/fast] Error 2
+
+
+Source file was:
+#include <linux/rtnetlink.h>
+	int main(void) {
+		int test = RTA_PREF;
+		return 0;
+	}
+Performing C SOURCE FILE Test LWS_HAVE_SUSECONDS_T failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b2005/fast && /usr/bin/make  -f CMakeFiles/cmTC_b2005.dir/build.make CMakeFiles/cmTC_b2005.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2005.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_SUSECONDS_T  -Wno-unused-variable   -Wno-unused-label  -o CMakeFiles/cmTC_b2005.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:3:3: error: unknown type name ‘suseconds_t’; did you mean ‘useconds_t’?
+   suseconds_t x = 0;
+   ^~~~~~~~~~~
+   useconds_t
+CMakeFiles/cmTC_b2005.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_b2005.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_b2005.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_b2005/fast' failed
+make: *** [cmTC_b2005/fast] Error 2
+
+
+Source file was:
+#include <sys/types.h>
+	int main(void) {
+		suseconds_t x = 0;
+		return (int)x;
+	}
+Performing C SOURCE FILE Test LWS_HAVE_PIPE2 failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_357f3/fast && /usr/bin/make  -f CMakeFiles/cmTC_357f3.dir/build.make CMakeFiles/cmTC_357f3.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_357f3.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_PIPE2  -D__USE_MINGW_ANSI_STDIO -Wno-deprecated-declarations -Wno-deprecated -Wall -Wsign-compare -fvisibility=hidden  -Wuninitialized -Wtype-limits -Wignored-qualifiers    -Wno-unused-variable   -Wno-unused-label -Werror  -o CMakeFiles/cmTC_357f3.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:8:10: error: implicit declaration of function ‘pipe2’; did you mean ‘_pipe’? [-Werror=implicit-function-declaration]
+   return pipe2(fd, 0);
+          ^~~~~
+          _pipe
+cc1: all warnings being treated as errors
+CMakeFiles/cmTC_357f3.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_357f3.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_357f3.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_357f3/fast' failed
+make: *** [cmTC_357f3/fast] Error 2
+
+
+Source file was:
+
+	#ifndef _GNU_SOURCE
+	#define _GNU_SOURCE
+	#endif
+	#include <unistd.h>
+	int main(void) {
+		int fd[2];
+		return pipe2(fd, 0);
+	}
+Performing C SOURCE FILE Test LWS_HAVE_TCP_USER_TIMEOUT failed with the following output:
+Change Dir: /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7524e/fast && /usr/bin/make  -f CMakeFiles/cmTC_7524e.dir/build.make CMakeFiles/cmTC_7524e.dir/build
+make[1]: Entering directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7524e.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DKEYWORD=__inline -DLWS_HAVE_TCP_USER_TIMEOUT  -D__USE_MINGW_ANSI_STDIO -Wno-deprecated-declarations -Wno-deprecated -Wall -Wsign-compare -fvisibility=hidden  -Wuninitialized -Wtype-limits -Wignored-qualifiers    -Wno-unused-variable   -Wno-unused-label -Werror  -o CMakeFiles/cmTC_7524e.dir/src.c.obj -c /export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c
+/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: netinet/tcp.h: No such file or directory
+ #include <netinet/tcp.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_7524e.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_7524e.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_7524e.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/export/local/works/doublegsoft.biz/bizprint/03.Development/bizprint/3rd/libwebsockets/build/mingw64/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_7524e/fast' failed
+make: *** [cmTC_7524e/fast] Error 2
+
+
+Source file was:
+#include <netinet/tcp.h>
+int main(void) { return TCP_USER_TIMEOUT; }
+
