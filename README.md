@@ -46,3 +46,14 @@ cmake -DCMAKE_TOOLCHAIN_FILE=../../cmake/mingw64.cmake \
   -DCMAKE_BUILD_TYPE=Release \
   ../..
 ```
+
+### 如何测试
+
+#### 编译althttpd
+
+```
+cd test && gcc althttpd.c -o althttpd
+
+./althttpd
+```
+
