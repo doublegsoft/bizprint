@@ -1,0 +1,5 @@
+#define MANIFEST_UUID "1"
+#define MANIFEST_ISODATE "2025-08-23"
+#define MANIFEST_DATE "2025-08-23"
+#define COMPILER "2"
+#define RELEASE_VERSION "0"

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>h5 Page – Tailwind + jQuery 3 Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="p-8 bg-white rounded shadow-md text-center">
+    <h5 id="demoTitle" class="text-3xl font-semibold text-indigo-600 cursor-pointer transition-colors">
+      Click me to toggle color!
+    </h5>
+  </div>
+</body>
+</html>
+<script>
+const ws = new WebSocket('ws://localhost:54321');
+
+ws.addEventListener('open', () => {
+  console.log('Connection opened');
+});
+
+ws.addEventListener('message', event => {
+  console.log(`Received: ${event.data}`);
+});
+
+ws.addEventListener('error', err => {
+  console.log(`Error: ${err.message}`);
+});
+
+ws.addEventListener('close', e => {
+  console.log(`Connection closed (code=${e.code})`);
+});
+
+$(function () {
+  $('#demoTitle').on('click', function () {
+    let text = 'printers';
+    ws.send(text);
+    console.log(`Sent: ${text}`);
+    $(this).toggleClass('text-indigo-600 text-red-600');
+  });
+});
+</script>
+
