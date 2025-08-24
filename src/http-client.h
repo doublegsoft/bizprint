@@ -124,7 +124,11 @@ struct http_response* handle_redirect_get(struct http_response* hresp, char* cus
       token = strtok(NULL, "\r\n");
     }
   }
-  return hresp;
+  else
+  {
+    /* We're not dealing with a redirect, just return the same structure */
+    return hresp;
+  }
 }
 
 /*
@@ -146,7 +150,11 @@ struct http_response* handle_redirect_head(struct http_response* hresp, char* cu
       token = strtok(NULL, "\r\n");
     }
   }
-  return hresp;
+  else
+  {
+    /* We're not dealing with a redirect, just return the same structure */
+    return hresp;
+  }
 }
 
 /*
@@ -168,7 +176,11 @@ struct http_response* handle_redirect_post(struct http_response* hresp, char* cu
       token = strtok(NULL, "\r\n");
     }
   }
-  return hresp;
+  else
+  {
+    /* We're not dealing with a redirect, just return the same structure */
+    return hresp;
+  }
 }
 
 /*
@@ -186,7 +198,7 @@ struct http_response* http_req(char *http_headers, struct parsed_url *purl)
   /* Declare variable */
   int sock;
   int tmpres;
-  // char buf[BUFSIZ+1];
+  char buf[BUFSIZ+1];
   struct sockaddr_in *remote;
 
   /* Allocate memeory for htmlcontent */
@@ -233,7 +245,7 @@ struct http_response* http_req(char *http_headers, struct parsed_url *purl)
   }
 
   /* Send headers to server */
-  unsigned int sent = 0;
+  int sent = 0;
   while(sent < strlen(http_headers))
   {
     tmpres = send(sock, http_headers+sent, strlen(http_headers)-sent, 0);
@@ -248,14 +260,14 @@ struct http_response* http_req(char *http_headers, struct parsed_url *purl)
   /* Recieve into response*/
   char *response = (char*)malloc(0);
   char BUF[BUFSIZ];
-  int received_len = 0;
-  while((received_len = recv(sock, BUF, BUFSIZ-1, 0)) > 0)
+  size_t recived_len = 0;
+  while((recived_len = recv(sock, BUF, BUFSIZ-1, 0)) > 0)
   {
-    BUF[received_len] = '\0';
+    BUF[recived_len] = '\0';
     response = (char*)realloc(response, strlen(response) + strlen(BUF) + 1);
     sprintf(response, "%s%s", response, BUF);
   }
-  if (received_len < 0)
+  if (recived_len < 0)
   {
     free(http_headers);
 #ifdef _WIN32
@@ -407,22 +419,22 @@ struct http_response* http_post(char *url, char *custom_headers, char *post_data
   {
     if(purl->query != NULL)
     {
-      sprintf(http_headers, "POST /%s?%s HTTP/1.1\r\nHost:%s\r\nConnection:close\r\nContent-Length:%I64d\r\nContent-Type:application/x-www-form-urlencoded\r\n", purl->path, purl->query, purl->host, strlen(post_data));
+      sprintf(http_headers, "POST /%s?%s HTTP/1.1\r\nHost:%s\r\nConnection:close\r\nContent-Length:%zu\r\nContent-Type:application/x-www-form-urlencoded\r\n", purl->path, purl->query, purl->host, strlen(post_data));
     }
     else
     {
-      sprintf(http_headers, "POST /%s HTTP/1.1\r\nHost:%s\r\nConnection:close\r\nContent-Length:%I64d\r\nContent-Type:application/x-www-form-urlencoded\r\n", purl->path, purl->host, strlen(post_data));
+      sprintf(http_headers, "POST /%s HTTP/1.1\r\nHost:%s\r\nConnection:close\r\nContent-Length:%zu\r\nContent-Type:application/x-www-form-urlencoded\r\n", purl->path, purl->host, strlen(post_data));
     }
   }
   else
   {
     if(purl->query != NULL)
     {
-      sprintf(http_headers, "POST /?%s HTTP/1.1\r\nHost:%s\r\nConnection:close\r\nContent-Length:%I64d\r\nContent-Type:application/x-www-form-urlencoded\r\n", purl->query, purl->host, strlen(post_data));
+      sprintf(http_headers, "POST /?%s HTTP/1.1\r\nHost:%s\r\nConnection:close\r\nContent-Length:%zu\r\nContent-Type:application/x-www-form-urlencoded\r\n", purl->query, purl->host, strlen(post_data));
     }
     else
     {
-      sprintf(http_headers, "POST / HTTP/1.1\r\nHost:%s\r\nConnection:close\r\nContent-Length:%I64d\r\nContent-Type:application/x-www-form-urlencoded\r\n", purl->host, strlen(post_data));
+      sprintf(http_headers, "POST / HTTP/1.1\r\nHost:%s\r\nConnection:close\r\nContent-Length:%zu\r\nContent-Type:application/x-www-form-urlencoded\r\n", purl->host, strlen(post_data));
     }
   }
 
@@ -474,8 +486,8 @@ struct http_response* http_head(char *url, char *custom_headers)
   struct parsed_url *purl = parse_url(url);
   if(purl == NULL)
   {
-    printf("Unable to parse url");
-    return NULL;
+      printf("Unable to parse url");
+      return NULL;
   }
 
   /* Declare variable */

@@ -1,22 +1,6 @@
-### cJSON
-
-#### CmakeLists.txt
-
-注释或者删除掉下列行
-
-```
--fstack-protector-strong
-```
-
-#### 编译
-
-```
-cmake -DCMAKE_TOOLCHAIN_FILE=../../cmake/mingw64.cmake -DENABLE_CJSON_UTILS=On -DENABLE_CJSON_TEST=Off ../..
-```
-
 ### libwebsockets
 
-#### CMakeLists.txt
+#### 修改CMakeLists.txt
 
 ```
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-variable")

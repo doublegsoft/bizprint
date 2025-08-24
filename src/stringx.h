@@ -226,6 +226,7 @@ void encodeblock( unsigned char in[], char b64str[], int len )
 char* base64_encode(char *clrstr) 
 {
 	char *b64dst = (char*)malloc(strlen(clrstr) + 50);
+	char b64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 	unsigned char in[3];
 	int i, len = 0;
 	int j = 0;

@@ -14,10 +14,10 @@
 */
 struct parsed_url 
 {
-  char *uri;					        /* mandatory */
+  char *uri;					/* mandatory */
   char *scheme;               /* mandatory */
   char *host;                 /* mandatory */
-	char *ip; 					        /* mandatory */
+	char *ip; 					/* mandatory */
   char *port;                 /* optional */
   char *path;                 /* optional */
   char *query;                /* optional */
@@ -50,6 +50,7 @@ void parsed_url_free(struct parsed_url *purl)
 */
 char* hostname_to_ip(char *hostname)
 {
+	char *ip = "0.0.0.0";
 	struct hostent *h;
 	if ((h=gethostbyname(hostname)) == NULL) 
 	{  
@@ -137,7 +138,7 @@ struct parsed_url *parse_url(const char *url)
     return NULL;
   }
 
-  (void)strncpy(purl->scheme, curstr, (short)len);
+  (void)strncpy(purl->scheme, curstr, len);
   purl->scheme[len] = '\0';
 
   /* Make the character to lower if it is upper case. */
